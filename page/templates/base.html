@@ -73,12 +73,16 @@
                 <img src="{% static 'images/Dreamary_Logo.png' %}" width="35" height="35" alt="Dreamary_Logo.png">
                 <label class="navbar-brand align-self-center">Dreamary</label>
             </a>
+            <div class="collapse navbar-collapse"></div>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="{% url 'new' %}">디자이너 등록하기</a>
+                </div>
         </div>
     </header>
 
     <main role="main">
         {% block content %}
-        
+
         {% endblock %}
     </main>
 
